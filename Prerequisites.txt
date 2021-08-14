@@ -1,0 +1,16 @@
+Welcome to Project Dr Virtual.
+
+Thanks for coming here.
+
+This is a very simple project in C++ using if else ,files and some graphics.
+
+
+Requirements:
+
+Turbo C++
+
+Basic Knowledge on If Else ladder.
+
+Basic Knowledge on Files.
+
+Basic knowledge on graphics.
