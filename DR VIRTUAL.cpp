@@ -1,14 +1,16 @@
-//#include<graphics.h>
-//#include<fstream.h>
+#include<graphics.h>
+#include<fstream.h>
 #include<conio.h>
 #include<stdio.h>
 #include<iomanip.h>
 #include<stdlib.h>
 #include<process.h>
+
 void medic();
 void contdr();
 void patdet();
 void firstaid();
+
 void main()
 {
        int gd=DETECT, gm;
