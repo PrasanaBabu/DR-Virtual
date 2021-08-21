@@ -67,21 +67,26 @@ void medic()
 	fstream f("Doc.txt",ios::out|ios::app);
 	fstream temp("temp.txt",ios::in|ios::out|ios::trunc);
 	clrscr();
+	
 	int op,age,wt,sd;
 	char name[50],a[40],b[40],c[40];
+	
 	cout<<"Enter Your Name : ";
 	   gets(name);
 	f<<name<<',';
 	temp<<name<<',';
+	
 	cout<<"Enter your weight : ";
 	   cin>>wt;
 	f<<wt<<' ';
 	temp<<wt<<' ';
+	
 	cout<<"Enter your age : ";
 	   cin>>age;
 	f<<age<<' ';
 	temp<<age<<' ';
 	f.close();
+	
 	cout<<"\nChoose the Health Problem you are suffering from\n";
 	cout<<"1.Stomach Pain\n";
 	cout<<"2.Headache\n";
@@ -90,10 +95,12 @@ void medic()
 	cout<<"Enter Number of days you have been suffering from the above disease "<<endl;
 	   cin>>sd;
 	clrscr();
+	
 	temp.seekg(0);
 	temp.getline(a,50,',');
 	temp.getline(b,50,' ');
 	temp.getline(c,50,' ');
+	
 	while(!temp.eof())
 	{
 		cout<<"Patient Name: "<<a<<endl;
